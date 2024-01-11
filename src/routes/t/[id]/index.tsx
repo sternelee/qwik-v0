@@ -421,7 +421,7 @@ export default component$(() => {
               type="module"
               dangerouslySetInnerHTML={`
             import build from "https://esm.sh/build";
-            import * as React from 'react'  
+            import * as React from 'react'
             import { createRoot } from 'react-dom/client'
 
             try {
@@ -429,12 +429,12 @@ export default component$(() => {
                 constructor(props) {
                   super(props);
                 }
-              
+
                 // if an error happened, set the state to true
                 static getDerivedStateFromError(err) {
-                  error.value += err  
+                  error.value += err
                 }
-              
+
                 render() {
                   return this.props.children;
                 }
